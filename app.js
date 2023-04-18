@@ -95,6 +95,7 @@ const deleteItem = e => {
   if (groceryList.children.length === 0) {
       clearBtn.classList.remove('show-container');
       groceryList.classList.remove('show-container');
+      localStorage.removeItem('list');
   }
   displayAlert('item removed', 'danger');
   setBackToDefault();
