@@ -69,7 +69,7 @@ const editLocalStorage = (id,value) => {
 }
 
 const getLocalStorage = () => {
-  return localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : [];
+  return JSON.parse(localStorage.getItem('list')) || [];
 }
 
 const setBackToDefault = () =>  {
